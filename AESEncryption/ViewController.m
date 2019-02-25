@@ -7,17 +7,33 @@
 //
 
 #import "ViewController.h"
-
-@interface ViewController ()
-
-@end
+#import "NSString+AESCrypt.h"
 
 @implementation ViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+@synthesize decryptedTextView;
+@synthesize encryptedTextView;
+
+- (NSString*)getEncryptionKey {
+    return [[NSBundle mainBundle] bundlePath];
+
 }
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    [self.encryptedTextField addTarget:self action:@selector(onValueChanged:) forControlEvents:UIControlEventEditingChanged];
+     
+    self.decryptedTextView.text = @"";
+    self.encryptedTextView.text = @"";
+}
+
+-(void)onValueChanged:(UITextField *)textField {
+    NSString *toBeEncrypted = textField.text;
+    
+    NSString *encrypted = [toBeEncrypted AES256EncryptWithKey:[self getEncryptionKey]];
+    NSString *decrypted = [encrypted AES256DecryptWithKey:[self getEncryptionKey]];
+    self.encryptedTextView.text = encrypted;
+    self.decryptedTextView.text = decrypted;
+}
 
 @end

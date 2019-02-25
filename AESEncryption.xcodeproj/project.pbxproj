@@ -13,6 +13,8 @@
 		24C3E78C22245E8C00A8683D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24C3E78B22245E8C00A8683D /* Assets.xcassets */; };
 		24C3E78F22245E8C00A8683D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24C3E78D22245E8C00A8683D /* LaunchScreen.storyboard */; };
 		24C3E79222245E8C00A8683D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C3E79122245E8C00A8683D /* main.m */; };
+		24C3E7A12224712100A8683D /* NSData+AESCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C3E7A02224712100A8683D /* NSData+AESCrypt.m */; };
+		24C3E7A32224789E00A8683D /* NSString+AESCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C3E7A22224789E00A8683D /* NSString+AESCrypt.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		24C3E78E22245E8C00A8683D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		24C3E79022245E8C00A8683D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		24C3E79122245E8C00A8683D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		24C3E79E222470A100A8683D /* NSString+AESCrypt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+AESCrypt.h"; sourceTree = "<group>"; };
+		24C3E79F222470DD00A8683D /* NSData+AESCrypt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+AESCrypt.h"; sourceTree = "<group>"; };
+		24C3E7A02224712100A8683D /* NSData+AESCrypt.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+AESCrypt.m"; sourceTree = "<group>"; };
+		24C3E7A22224789E00A8683D /* NSString+AESCrypt.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+AESCrypt.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +73,10 @@
 				24C3E78D22245E8C00A8683D /* LaunchScreen.storyboard */,
 				24C3E79022245E8C00A8683D /* Info.plist */,
 				24C3E79122245E8C00A8683D /* main.m */,
+				24C3E79E222470A100A8683D /* NSString+AESCrypt.h */,
+				24C3E79F222470DD00A8683D /* NSData+AESCrypt.h */,
+				24C3E7A02224712100A8683D /* NSData+AESCrypt.m */,
+				24C3E7A22224789E00A8683D /* NSString+AESCrypt.m */,
 			);
 			path = AESEncryption;
 			sourceTree = "<group>";
@@ -142,6 +152,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				24C3E78722245E8A00A8683D /* ViewController.m in Sources */,
+				24C3E7A32224789E00A8683D /* NSString+AESCrypt.m in Sources */,
+				24C3E7A12224712100A8683D /* NSData+AESCrypt.m in Sources */,
 				24C3E79222245E8C00A8683D /* main.m in Sources */,
 				24C3E78422245E8A00A8683D /* AppDelegate.m in Sources */,
 			);

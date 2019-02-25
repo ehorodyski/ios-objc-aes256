@@ -10,6 +10,9 @@
 
 @interface ViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UITextField *encryptedTextField;
+@property (strong, nonatomic) IBOutlet UITextView *encryptedTextView;
+@property (strong, nonatomic) IBOutlet UITextView *decryptedTextView;
 
 @end
 
